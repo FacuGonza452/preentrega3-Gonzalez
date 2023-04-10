@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/362e73f235.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <a href="/index.html" class="logo">
+            <img src="/img/pulidora-logo.png" alt="logo de la compañia">
+            <h2 class="nombre-empresa">Deluxe Car Detail</h2>
+        </a>
+    <nav>
+        <a href="/index.html" >Home</a>
+        <a href="/pages/servicios.html" >Servicios</a>
+        <a href="/pages/galeria.html" >Galería</a>
+        <a href="/pages/contacto.html" >Contacto</a>
+        <a href="/pages/faq.html" >Preguntas Frecuentes</a>
+    </nav>
+    <div class="hamburger-menu">
+        <input id="menu-btn" type="checkbox" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="/index.html" >Home</a></li>
+          <li><a href="/pages/servicios.html" >Servicios</a></li>
+          <li><a href="/pages/galeria.html" >Galería</a></li>
+          <li><a href="/pages/contacto.html" >Contacto</a></li>
+          <li><a href="/pages/faq.html" >Preguntas Frecuentes</a></li>
+        </ul>
+      </div>
+    </header>
+    <main id="main-servicios">
+        <div class="iconos">
+            <a href="#"><i class="fa-solid fa-1"></i>Tipo de vehículo</a>
+        </div>
+            <div class="seleccionador-vehiculo">
+                <label >
+                    <img src="../img/icono-auto.png" alt="icono de auto regular">
+                    <input type="radio" name="vehiculo" value="auto-regular" checked>       
+                </label>
+                <label>
+                    <img src="../img/van-truck-car-13329 (1).png" alt="icono de auto mediano">
+                    <input type="radio" name="vehiculo" value="auto-mediano" checked>
+                </label>
+                <label>
+                    <img src="../img/camioneta.png" alt="icono de camioneta">
+                    <input type="radio" name="vehiculo" value="camioneta" checked>
+                </label>
+            </div>
+            <div class="iconos">
+                <a href="#"><i class="fa-solid fa-2"></i>Tipo de lavado</a>
+            </div>
+            <div id="tabla-tipoDeLavado">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Lavado Básico</th>
+                            <th>Lavado Deluxe</th>
+                        </tr>
+                    </thead>
+                    <section class="tabla-lavado">
+                        <tbody>
+                            <td>
+                                <div class="lavado-basico">
+                                    <p>Precio: $10</p>
+                                    <p class="tiempo-basico">Tiempo: 2 horas</p>
+                                    <li>Lavado exterior del vehículo</li>
+                                    <li>Limpieza de llantas y neumáticos</li>
+                                    <li>Pulido de la pintura</li>
+                                    <li>Limpieza de vidrios y espejos</li>
+                                    <input type="radio" name="lavado" value="basico" checked>   
+                                </div>
+                            </td>
+                            <td>
+                                <div class="lavado-deluxe">
+                                    <p>Precio: $20</p>
+                                    <p>Tiempo: 4 horas</p>
+                                    <li>Lavado exterior del vehículo</li>
+                                    <li>Limpieza de llantas y neumáticos</li>
+                                    <li>Secado del vehículo</li>
+                                    <li>Pulido de la pintura</li>
+                                    <li>Limpieza de vidrios y espejos</li>
+                                    <li>Lavado de tapicería</li>
+                                    <li>Limpieza de alfombras y tapetes</li>
+                                    <li>Limpieza de salpicaderos y tableros</li>
+                                    <input type="radio" name="lavado" value="deluxe" checked>
+                                </div>
+                            </td>
+                        </tbody>
+                    </section>
+                </table>
+            </div>
+            <div class="iconos">
+                <a href="#"><i class="fa-solid fa-3"></i>Servicios Extra</a>
+            </div>
+            <div id="tabla-servicios">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Servicio Extra</th>
+                            <th>Tiempo</th>
+                            <th>Precio</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Limpieza de tapicería</td>
+                            <td>1 hora</td>
+                            <td>$50</td>
+                            <td><input type="checkbox" name="servicios[]" value="limpieza-tapiceria"></td>
+                        </tr>
+                        <tr>
+                            <td>Encerado de la pintura</td>
+                            <td>2 horas</td>
+                            <td>$80</td>
+                            <td><input type="checkbox" name="servicios[]" value="encerado-pintura"></td>
+                        </tr>
+                        <tr>
+                            <td>Limpieza de motor</td>
+                            <td>3 horas</td>
+                            <td>$100</td>
+                            <td><input type="checkbox" name="servicios[]" value="limpieza-motor"></td>
+                        </tr>
+                        <tr>
+                            <td>Pulido de faros</td>
+                            <td>30 minutos</td>
+                            <td>$20</td>
+                            <td><input type="checkbox" name="servicios[]" value="pulido-faros"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> 
+            <div class="iconos">
+                <a href="#"><i class="fa-solid fa-4"></i>Resumen de la compra</a>
+            </div>
+            <div id="resumen-compra">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tiempo Total</th>
+                            <th>Precio Total</t>
+                        </tr>
+                        <tr>
+                            <td>Aca va el tiempo total</td>
+                            <td>Aca va el precio final</td>
+                        </tr>
+                </table>
+            </div>
+            <div id="contenedor-formulario">
+                <div class="formulario-servicios">
+                    <form>
+                        <div class="row">
+                            <div class="col">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="col">
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" id="apellido" name="apellido" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="col">
+                                <label for="telefono">Teléfono:</label>
+                                <input type="tel" id="telefono" name="telefono" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="marca">Marca del vehículo:</label>
+                                <input type="text" id="marca" name="marca" >
+                            </div>
+                            <div class="col">
+                                <label for="modelo">Modelo del vehículo:</label>
+                                <input type="text" id="modelo" name="modelo" >
+                            </div>
+                            <div class="col">
+                                <label for="fecha">Fecha:</label>
+                                <input type="date" id="fecha" name="fecha" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje"></textarea>
+                        </div>
+                        <button class="btn-enviar" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+    </main>
+    <footer >
+        <div class="container">
+            <div class="redes-sociales">
+                <a href="https://twitter.com/"><img src="/img/twitter.png" alt="Logo de Twitter"></a>
+                <a href="https://www.instagram.com/"><img src="/img/instagram.png" alt="Logo de Instagram"></a>
+                <a href="https://www.facebook.com/"><img src="/img/facebook.png" alt="Logo de Facebook"></a>
+            </div>
+            <p>&copy; 2023 Deluxe Car Detail. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
