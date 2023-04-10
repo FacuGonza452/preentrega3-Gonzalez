@@ -226,6 +226,12 @@ p{
     color:#da8f8f;
 }
 
+.bienvenido-faq{
+    animation-duration: 10s;
+    animation-name: aparecer;
+    animation-iteration-count:1 ;
+}
+
 .contenedor-todoElTexto h1{
     text-align: center;
     padding: 20px;
@@ -256,6 +262,18 @@ p{
 
 .texto-contacto{
     padding:90px 50px
+
+}
+
+.texto-contacto h1{
+    color:white;
+    animation-duration: 10s;
+    animation-name: aparecer;
+    animation-iteration-count:1 ; 
+}
+
+.texto-contacto p{
+    color:#da8f8f;
 }
 
 #formulario-mapa{
@@ -267,7 +285,7 @@ p{
 
 #mapa{
     flex: 1;
-    margin: 50px;
+    margin: 25px;
     padding-bottom: 0px;
 
 }
@@ -287,7 +305,7 @@ p{
     display: block;
     margin-bottom: 10px;
     text-align: center;
-    
+    color:#da8f8f;
 }
 
 form{
@@ -367,6 +385,7 @@ textarea{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 table{
@@ -405,7 +424,7 @@ input[name='lavado'][value='basico']{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
+    max-width: 450px;
     margin:0 auto;
 }
 
@@ -455,37 +474,39 @@ input[name='lavado'][value='basico']{
 @media screen and (max-width: 768px) {
     /* Estilos para pantallas de 768px o menos */
     .nav-link {
-      display: none;
+        display: none;
     }
     
     .hamburger-menu {
-      display: block;
+        display: block;
     }
     
     nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: white;
-      display: none;
-      z-index: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        display: none;
+        z-index: 1;
     }
     
     nav a {
-      display: block;
-      margin: 30px;
-      font-size: 1.5rem;
-      text-align: center;
+        display: block;
+        margin: 30px;
+        font-size: 1.5rem;
+        text-align: center;
     }
     
     nav a:hover {
-      color: blue;
+        color: blue;
     }
-    
-    @media (min-width: 768px) {
+}
+
+
 /* Oculta el botón de hamburguesa en pantallas grandes */
+    @media (min-width: 768px) {
 .hamburger-menu {
 display: none;
 }
@@ -505,4 +526,54 @@ display: none;
         background-position: 0% 50%;
     }
 }
-  
+
+/*Animación Aparecer*/
+@keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+ }
+ 
+
+/*768 Pixeles*/
+
+
+@media (max-width: 768px){
+.texto-bienvenida{
+    font-size:13px;
+}
+
+#mapa{
+    margin: 10px;
+    
+}
+
+#tabla-tipoDeLavado{
+    width: 400px;
+    margin: auto;
+}
+
+.seleccionador-vehiculo {
+    width: auto;
+}
+
+.iconos{
+    padding: auto;
+}
+
+#tabla-servicios{
+    width: auto;
+}
+
+}
+
+/*576 Pixeles*/
+
+@media (max-width: 576px){
+    .texto-bienvenida{
+        font-size:10px;
+    } 
+}
