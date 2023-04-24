@@ -1,0 +1,90 @@
+/*Mediaqueries*/
+    /*960 Pixeles*/
+
+    @media (max-width:960px){
+        .texto-bienvenida{
+            font-size: 12px;
+        }
+    }
+    
+
+    /*768 Pixeles*/
+
+    @media (max-width: 768px){
+        .texto-bienvenida{
+            font-size:10px;
+        }
+        
+        #mapa{
+            margin: 10px;
+            
+        }
+        
+        #tabla-tipoDeLavado{
+            width: 400px;
+            margin: auto;
+        }
+        
+        .seleccionador-vehiculo {
+            width: auto;
+        }
+        
+        .iconos{
+            padding: auto;
+        }
+        
+        #tabla-servicios{
+            width: auto;
+        }
+        
+        }
+        
+        /*576 Pixeles*/
+        
+        @media (max-width: 576px){
+            .texto-bienvenida{
+                font-size:10px;
+            }
+            .seleccionador-vehiculo{
+                img{
+                        width: 90px; 
+                        height: 80px;
+                }
+            }
+        } 
+        /*420 Pixeles*/
+
+        @media (max-width: 420px){
+            .navbar-brand{
+                font-size: 15px;
+                img{
+                    width: 75px;
+                    height: 75px;
+                }
+            }
+        }
+        
+        /*400 Pixeles*/
+        
+        @media (max-width: 400px){
+            table{
+                max-width: 80%;
+                display: inline-block;
+                }
+            #tabla-tipoDeLavado{
+                max-width: 80%;
+            }
+            
+        }
+
+        /*340 Pixeles*/
+
+        @media (max-width: 340px){
+            .navbar-brand{
+                font-size: 10px;
+                img{
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }

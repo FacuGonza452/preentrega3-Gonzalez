@@ -1,0 +1,25 @@
+/*Index*/
+
+#main-html{
+    background-image: url("../img/hombre-puliendo.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+}
+
+
+.texto-bienvenida{
+    max-width: 1000px; 
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+    color: #fff; 
+    text-shadow: 2px 2px #000;
+    h1{
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 1.5em;
+    }
+}

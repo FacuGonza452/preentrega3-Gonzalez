@@ -1,0 +1,39 @@
+/*FAQ*/
+.texto-faq{
+    h1{
+        font-size: 32px;
+        text-align: center;
+        padding: 150px 0px;
+        font-weight: 500;
+        color:#ffffff
+    }
+    p{
+        color:$color-p;
+        font-weight: 500;
+    }
+}
+
+.bienvenido-faq{
+    color:white;
+    animation-duration: 10s;
+    animation-name: aparecer;
+    animation-iteration-count:1 ; 
+}
+
+.contenedor-todoElTexto{
+    strong{text-align: center;
+        padding: 20px;
+        color:white;
+        font-size: 30px;
+    }
+    h3{margin:30px;
+        font-size: 20px;
+        color:white;
+    }
+    p{font-weight: 500;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        color: $color-p;
+    }
+}
+

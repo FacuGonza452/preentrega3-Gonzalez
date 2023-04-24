@@ -1,0 +1,78 @@
+/*Contacto*/
+
+.texto-contacto{
+    padding:90px 50px;
+    h1{color:white;
+        animation-duration: 10s;
+        animation-name: aparecer;
+        animation-iteration-count:1 ; 
+        padding-bottom: 50px;
+    }
+    p{
+        color:$color-p;
+    }
+}
+
+#formulario-mapa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#mapa{
+    flex: 1;
+    margin: 25px;
+    padding-bottom: 0px;
+
+}
+
+.contenedor-formulario-contacto{
+    flex: 1;
+    padding-bottom: 40px;
+}
+
+.info-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    a{
+        display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    color:$color-p;
+    }
+}
+
+form{
+    display: block;
+    margin-top: 20px;
+}
+
+
+.campo{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+.btn-enviar{
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    color:white;
+}

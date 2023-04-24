@@ -1,0 +1,446 @@
+@charset "UTF-8";
+/*Generales*/
+@font-face {
+  font-family: "montserrat";
+  src: url(../fonts/Montserrat-Italic-VariableFont_wght.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "montserrat";
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Variables*/ /*Header*/
+.my-nav {
+  background-color: #1aa4f3;
+}
+
+/*Index*/
+#main-html {
+  background-image: url("../img/hombre-puliendo.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.texto-bienvenida {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 100px;
+  color: #fff;
+  text-shadow: 2px 2px #000;
+}
+.texto-bienvenida h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+.texto-bienvenida p {
+  font-size: 1.5em;
+}
+
+/*Galeria*/
+#galeria {
+  padding-bottom: 40px;
+}
+#galeria h1 {
+  font-size: 28px;
+  text-align: center;
+  padding: 35px 10px;
+  font-weight: 500;
+  color: #ccc;
+  animation-duration: 10s;
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+}
+#galeria img {
+  width: 250px;
+  height: 250px;
+  margin: 15px 0px;
+}
+#galeria img:hover {
+  border: 5px solid #f5f5f5;
+}
+
+/*FAQ*/
+.texto-faq h1 {
+  font-size: 32px;
+  text-align: center;
+  padding: 150px 0px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.texto-faq p {
+  color: #da8f8f;
+  font-weight: 500;
+}
+
+.bienvenido-faq {
+  color: white;
+  animation-duration: 10s;
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+}
+
+.contenedor-todoElTexto strong {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-size: 30px;
+}
+.contenedor-todoElTexto h3 {
+  margin: 30px;
+  font-size: 20px;
+  color: white;
+}
+.contenedor-todoElTexto p {
+  font-weight: 500;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  color: #da8f8f;
+}
+
+/*Contacto*/
+.texto-contacto {
+  padding: 90px 50px;
+}
+.texto-contacto h1 {
+  color: white;
+  animation-duration: 10s;
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+  padding-bottom: 50px;
+}
+.texto-contacto p {
+  color: #da8f8f;
+}
+
+#formulario-mapa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#mapa {
+  flex: 1;
+  margin: 25px;
+  padding-bottom: 0px;
+}
+
+.contenedor-formulario-contacto {
+  flex: 1;
+  padding-bottom: 40px;
+}
+
+.info-formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+.info-formulario a {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #da8f8f;
+}
+
+form {
+  display: block;
+  margin-top: 20px;
+}
+
+.campo {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.btn-enviar {
+  display: block;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+/*Servicios*/
+.menu-servicios h1 {
+  font-size: 28px;
+  text-align: center;
+  padding: 35px 10px;
+  font-weight: 500;
+  color: #ccc;
+  animation-duration: 10s;
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+}
+
+.iconos {
+  text-align: center;
+  font-size: 30px;
+  padding: 50px;
+}
+.iconos i {
+  padding-right: 10px;
+}
+
+.seleccionador-vehiculo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seleccionador-vehiculo label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.seleccionador-vehiculo img {
+  width: 150px;
+  height: 140px;
+  margin-bottom: 10px;
+  margin: 15px;
+}
+
+#tabla-tipoDeLavado, #tabla-servicios, #resumen-compra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #030303;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr {
+  background-color: rgb(4, 223, 157);
+}
+
+.lavado-deluxe li, .lavado-basico li {
+  text-align: left;
+}
+
+input[name=lavado][value=basico] {
+  margin-top: 80px;
+}
+
+/*Formulario de servicios*/
+.formulario-servicios {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  max-width: 450px;
+  margin: 0 auto;
+}
+.formulario-servicios form {
+  display: flex;
+  flex-direction: column;
+}
+.formulario-servicios label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.formulario-servicios input, .formulario-servicios textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.formulario-servicios .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.formulario-servicios .col {
+  flex: 1;
+  margin-right: 10px;
+}
+.formulario-servicios button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#contenedor-formulario {
+  padding-bottom: 60px;
+}
+
+/*Footer*/
+footer {
+  background-color: rgb(91, 192, 248);
+  color: black;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.redes-sociales {
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.redes-sociales a {
+  text-decoration: none;
+  font-size: 28px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  background: #314652;
+  color: white;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  justify-content: center;
+  line-height: 60px;
+}
+.redes-sociales a:hover {
+  transform: scale(1.2);
+}
+
+.copy {
+  font-size: 1, 4em;
+  margin-top: 10px;
+}
+
+/*Animación Fondo*/
+@keyframes fondoanimado {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/*Animación Aparecer*/
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*Condicionales*/
+#main-servicios, #main-faq, #main-contacto, #main-galeria {
+  background-image: linear-gradient(135deg, #00B7D4, #505488, #2F3F80, #161569, #5A4894, #A950A1, #FF7CAE);
+  background-size: 500%;
+  animation: fondoanimado 10s infinite;
+}
+
+/*Mediaqueries*/
+/*960 Pixeles*/
+@media (max-width: 960px) {
+  .texto-bienvenida {
+    font-size: 12px;
+  }
+}
+/*768 Pixeles*/
+@media (max-width: 768px) {
+  .texto-bienvenida {
+    font-size: 10px;
+  }
+  #mapa {
+    margin: 10px;
+  }
+  #tabla-tipoDeLavado {
+    width: 400px;
+    margin: auto;
+  }
+  .seleccionador-vehiculo {
+    width: auto;
+  }
+  .iconos {
+    padding: auto;
+  }
+  #tabla-servicios {
+    width: auto;
+  }
+}
+/*576 Pixeles*/
+@media (max-width: 576px) {
+  .texto-bienvenida {
+    font-size: 10px;
+  }
+  .seleccionador-vehiculo img {
+    width: 90px;
+    height: 80px;
+  }
+}
+/*420 Pixeles*/
+@media (max-width: 420px) {
+  .navbar-brand {
+    font-size: 15px;
+  }
+  .navbar-brand img {
+    width: 75px;
+    height: 75px;
+  }
+}
+/*400 Pixeles*/
+@media (max-width: 400px) {
+  table {
+    max-width: 80%;
+    display: inline-block;
+  }
+  #tabla-tipoDeLavado {
+    max-width: 80%;
+  }
+}
+/*340 Pixeles*/
+@media (max-width: 340px) {
+  .navbar-brand {
+    font-size: 10px;
+  }
+  .navbar-brand img {
+    width: 50px;
+    height: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */

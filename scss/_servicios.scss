@@ -1,0 +1,122 @@
+/*Servicios*/
+
+.menu-servicios{
+    h1{
+        font-size: 28px;
+        text-align: center;
+        padding: 35px 10px;
+        font-weight: 500;
+        color:#ccc;
+        animation-duration: 10s;
+        animation-name: aparecer;
+        animation-iteration-count: 1;
+        }
+}
+
+.iconos{
+    text-align: center;
+    font-size: 30px;
+    padding: 50px;
+    i{
+        padding-right: 10px;
+    }
+}
+
+.seleccionador-vehiculo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    label{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+    img{
+        width: 150px; 
+        height: 140px;
+        margin-bottom: 10px;
+        margin:15px; 
+    }
+}
+
+#tabla-tipoDeLavado, #tabla-servicios, #resumen-compra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+table{
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #030303;
+}
+
+th{
+    background-color: #f2f2f2;
+}
+
+
+tr{
+background-color: rgb(4, 223, 157);
+}
+
+.lavado-deluxe li, .lavado-basico li{
+    text-align: left;
+}
+
+
+input[name='lavado'][value='basico']{
+    margin-top: 80px;
+}
+
+/*Formulario de servicios*/
+
+.formulario-servicios {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    margin:0 auto;
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    label{
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    input, textarea{
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+    }
+    .row{display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .col{flex: 1;
+        margin-right: 10px;
+    }
+    button{
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+}
+
+#contenedor-formulario{
+    padding-bottom: 60px;
+}
