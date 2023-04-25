@@ -1,0 +1,30 @@
+/*Condicionales*/
+
+$mode: fondoAnimado1;
+
+@if $mode == fondoAnimado1{
+    #main-servicios, #main-faq, #main-contacto,#main-galeria{
+        background-image: linear-gradient(135deg
+    ,#00B7D4, #505488, #2F3F80, #161569, #5A4894, #A950A1, #FF7CAE);
+    background-size: 500%;
+    animation:fondoanimado 10s infinite;
+    }
+}@else if $mode == fondoAnimado2{
+    #main-servicios, #main-faq, #main-contacto,#main-galeria{
+        background-image: linear-gradient(135deg
+    ,#0A4D68, #088395, #05BFDB, #2eb89c);
+    background-size: 500%;
+    animation:fondoanimado 7s infinite;
+    }
+}@else{
+    #main-servicios, #main-faq, #main-contacto,#main-galeria{
+        background-image: linear-gradient(135deg
+    ,#E26A2C, #FF8243, #FDA65D, #FFD07F,);
+    background-size: 500%; 
+    animation:fondoanimado 7s infinite;
+    p, h1,h2,h3, a{
+        color:black;
+        }
+    }
+}
+
